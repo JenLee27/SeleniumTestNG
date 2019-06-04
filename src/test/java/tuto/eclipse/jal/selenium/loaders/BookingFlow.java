@@ -17,7 +17,12 @@ public class BookingFlow {
 		home.run();
 	}
 
+	protected void dispoPageRun() {
+		// TODO On ajoutera la classe AVAI - A coder
+	}
+
 	protected void run() {
 		homePageRun();
+		dispoPageRun();
 	}
 }
