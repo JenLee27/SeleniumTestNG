@@ -2,7 +2,6 @@ package tuto.eclipse.jal.selenium.ng.pageObjects;
 
 import java.time.LocalDate;
 
-import org.apache.bcel.generic.GETSTATIC;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -17,7 +16,7 @@ public class HomePageNG {
 	 * ACTIONS
 	 */
 	public static void closeModal(WebDriver driver) {
-		driver.findElements(By.cssSelector(HomePageIDs.MODAL_CLOSE_BUTTON_CSS)).get(1).click();
+		driver.findElements(By.className(HomePageIDs.MODAL_CLOSE_BUTTON_CLASS)).get(1).click();
 	}
 
 	public static void selectDepartureCity(String cityCode, WebDriver driver) {

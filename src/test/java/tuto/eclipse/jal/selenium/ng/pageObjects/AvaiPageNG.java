@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import tuto.eclipse.jal.selenium.pageObjects.avaiPage.AvaiPageIDs;
+import tuto.eclipse.jal.selenium.pageObjects.avaiPage.DispoPageIDs;
 
 public class AvaiPageNG {
 	
@@ -13,7 +13,7 @@ public class AvaiPageNG {
 	
 	public static void waitForPage(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.elementToBeClickable(By.id(AvaiPageIDs.LOGIN_RADIO_BUTTON_ID)));
+		wait.until(ExpectedConditions.elementToBeClickable(By.id(DispoPageIDs.LOGIN_RADIO_BUTTON_ID)));
 	}
 
 }
